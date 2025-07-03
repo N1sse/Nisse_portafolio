@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8" />
-    <title>Nisse</title>
+    <title>Niss</title>
 
     <!-------  icono para pestañas  --------->
     <!----Apple---->
@@ -10,31 +10,91 @@
      <!----windows/etc---->
     <link rel="shortcut icon" type="image/x-icon" href="img/logo_pestana.png">
 
-    <link rel="stylesheet" href="estilos/nav_footer.css">
+     <!----Estilos---->
+      <!-- nav bar, banner, footer & flecha -->
+      <link rel="stylesheet" href="estilos/nav_footer.css">
+      <!-- index -->
+       <link rel="stylesheet" href="estilos/index.css">
 </head>
 <body>
     <!--------------header------------------>
-    <header>
-        <!-----------Nav Bar----------->
-        <div class="nav_container">
-            <nav>
-                <a href="index.html">
-                    <img class="logo" src="img/logo.png" alt="Logo">
-                </a>
-                <ul>
-                    <li><a href="paginas/info.html">Info</a></li>
-                    <li><a href="paginas/contact.html">Contacto</a></li>
-                    <li><a href="">Portafolio</a></li>
-                    <li><a href=""></a></li>
-                </ul>
-            </nav>
+   <header>
+     <nav class="navbar">
+       <a href="index.html">
+         <img class="logo" src="img/logo_bgBlack.png" alt="Logo">
+       </a>
+       <ul>
+         <li><a href="paginas/info.html">Sobre mí</a></li>
+         <li><a href="paginas/contacto.html">Contacto</a></li>
+         <li class="dropdown">
+           <a href="#">Trabajos</a>
+           <ul class="dropdown-menu">
+             <li><a href="paginas/diseñoWeb.html">Diseño Web</a></li>
+             <li><a href="paginas/fotos.html">Fotografía</a></li>
+             <li><a href="paginas/identidadMarca.html">Identidad de Marca</a></li>
+           </ul>
+         </li>
+       </ul>
+     </nav>
+   </header>
 
-        </div>
-    </header>
     <!--------------main------------------>
-    <main></main>
-       <!---------------flecha------------------->  
-     <a title="Volver arriba" aria-label="Volver arriba" rel="nofollow" href="#" class="generate-back-to-top" style="opacity: 1; visibility: visible;" data-scroll-speed="400" data-start-scroll="300">
+     <main>
+        <!--------- banner --------->
+        <section class="bg">
+            <div class="banner">
+                <img src="img/Niss_banner.png" alt="">   
+                <!-- por si tiene curiosidad la cancion en mi banner es woulnd't u like - Epic -->
+            </div>
+        </section>
+        <!------ intro/saludo ------>
+        <section class="info-container">
+            <div class="saludo">
+                <h2><strong>Hi</strong>, I’m Niss — a visual designer with a soft spot for identity and web.</h2>
+                <p>Sometimes I code, but always I design with emotion.</p>
+            </div> 
+        </section>
+        <!--------- prov fav --------->
+       <div class="projectFav">
+         <div class="favLeft">
+           <img src="img/designFav.png" alt="Skitty Bounce imagen 1">
+         </div>
+
+         <div class="favContentRight">
+           <h3>Proyecto Fav <br>Skitty Bounce</h3>
+           <h5>Identidad de Marca, Diseño UX & UI</h5>
+           <p>
+             Uno de mis proyectos favoritos: identidad visual y wireframe de alta calidad en Figma. 
+           </p>
+           <a href="paginas/marcas/skittyBounce.html" class="case-link">Ver más +</a>
+         </div>
+       </div>
+       <!-- Cards botones -->
+       <section class="cards-section">
+         <div class="cards-wrapper">
+     
+           <a href="paginas/info.html">
+             <div class="card" >
+                    <img src="img/icon_2.png" alt="Icono de habilidades">
+                <h3>Mis Skills</h3>
+              </div>
+           </a>
+    
+            <a href="paginas/contacto.html">
+              <div class="card">
+                <img src="img/icon_cel.png" alt="Icono de contacto">
+                <h3>Contáctame</h3>
+              </div>
+            </a>
+            <div class="card v3" id="randomCard">
+              <img src="img/icon_me.png" alt="">
+              <h3>¿Random?</h3> 
+            </div>
+         </div>
+       </section>
+     </main>
+    <!---------------flecha------------------->  
+    <a title="Volver arriba" aria-label="Volver arriba" rel="nofollow" href="#" class="generate-back-to-top" style="opacity: 1; visibility: visible;" data-scroll-speed="400" data-start-scroll="300">
          <span class="gp-icon icon-arrow-up">
              <svg viewBox="0 0 330 512" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"> 
                <path d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z" fill-rule="nonzero">
@@ -43,7 +103,26 @@
          </span>
     </a>
     <!--------footer--------->
-    <footer></footer>  
+    <footer class="mini-footer">
+      <div class="footer-icons">
+        <a href="https://github.com/N1sse" target="_blank" aria-label="GitHub">
+            <i class="bi bi-github"></i>
+        </a>
+
+        <a href="https://www.instagram.com/niss_ramirez/?igsh=MW12M3YzODkwa2hmOQ%3D%3D#" target="_blank" aria-label="Instagram">
+          <i class="bi bi-instagram"></i>
+        </a>
+
+       <a href="https://t.me/Nis_01" target="_blank"  aria-label="Telegram">
+          <i class="bi bi-telegram"></i>
+        </a>  
+      </div>
+      <p>© 2025 Niss. All rights reserved. | Diseñado con cariño</p>
+    </footer>
     <!-------Script-------->
+    <!-- icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- random -->
+     <script src="js/card.js"></script>
 </body>
 </html>

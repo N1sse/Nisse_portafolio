@@ -1,0 +1,149 @@
+.projectFav {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin: 0;
+  background-color: #f9f4f2;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.favLeft {
+  flex: 1;
+  background-color: #ceafaf;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.favContentRight {
+  flex: 1 1 50%;
+  background-color: #f8e9e9;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.favContentRight h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.favContentRight h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #a84765;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.favContentRight p {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.6;
+  color: #333;
+}
+
+.favContentRight .sub-image {
+  width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.case-link {
+  color: #a5345f;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  border-bottom: 2px solid #a5345f;
+  width: fit-content;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.case-link:hover {
+  color: #242316;
+  border-bottom-color: #eba7df;
+}
+/*---------------- Cards ----------------*/
+.cards-section {
+  background-color: #3a3838;
+  padding: 90px 0;
+}
+
+.cards-wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding-left: 120px;
+}
+
+.cards-wrapper a{
+  text-decoration: none;
+}
+
+.card {
+  width: 230px;
+  height: 200px;
+  background-color: #a5345f;
+  border-radius: 2rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  padding: 30px 20px;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.card img {
+  max-width: 76px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.card.v3 img {
+  max-width: 100px !important;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.card a,
+.card h3 {
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0;
+  transition: color 0.3s;
+}
+
+.card:hover h3 {
+  color: #adadad;
+}
+
+/* Responsive ajustes */
+@media (max-width: 560px) {
+  .cards-wrapper {
+    padding: 0 20px;
+  }
+
+  .card img {
+    max-width: 80px;
+  }
+}

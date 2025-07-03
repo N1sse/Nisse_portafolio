@@ -1,0 +1,114 @@
+/* Galería de proyectos */
+.art-gallery {
+  background-color: #ece2e2;
+  padding: 140px 40px 80px;
+  text-align: center;
+}
+
+/* Título */
+.gallery-title h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem;
+  color: #a5345f;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+
+/* Subtítulo */
+.gallery-title p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: #5e5e5e;
+  max-width: 640px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+/* Subtítulo */
+.gallery-title2 p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: #5e5e5e;
+  max-width: 640px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+}
+
+
+/* Cuadrícula de imágenes */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 24px;
+}
+
+/* Estilo de SS*/
+.gallery-grid img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: black;
+}
+
+/* Hover*/
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/*Descripción*/
+.project-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-caption {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  color: #4a4a4a;
+  margin-top: 10px;
+  max-width: 250px;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.project-card img {
+  width: 100%;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
+
+.hover-description {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  color: #f4d7e7;
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.project-card:hover .hover-description {
+  opacity: 1;
+}
+

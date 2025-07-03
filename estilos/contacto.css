@@ -1,0 +1,84 @@
+.contact-cards {
+  margin-top: 60px;
+  text-align: center;
+  padding: 100px 20px;
+  background-color: #f8edf1;
+}
+
+.contact-cards h2 {
+  font-size: 2.6rem;
+  font-family: 'Playfair Display', serif;
+  color: #a5345f;
+  margin-bottom: 10px;
+}
+
+.contact-cards p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.1rem;
+  color: #5e5e5e;
+  margin-bottom: 40px;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: rgb(65, 65, 65);
+  border-radius: 16px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px 20px;
+  width: 160px;
+  text-align: center;
+  text-decoration: none;
+  color: #f1ccdb;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card i {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.email-card {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  color: #f1ccdb;
+}
+
+.email-card .email-text {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #444444;
+  color: #f1ccdb;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+  z-index: 10;
+}
+
+/* cuando se hace click (focus visible) */
+.email-card:focus .email-text,
+.email-card:focus-visible .email-text {
+  visibility: visible;
+  opacity: 1;
+}
